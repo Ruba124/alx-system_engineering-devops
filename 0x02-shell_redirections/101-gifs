@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Rla |sort -g
+find . -type -f "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2 | rev | LC-ALL=C sort -f
